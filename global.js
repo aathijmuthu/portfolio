@@ -62,3 +62,28 @@ document.body.insertAdjacentHTML(
 		</select>
 	</label>`
 );
+
+const select = document.querySelector(".color-scheme select");
+
+// Set color scheme helper
+const setColorScheme = (colorScheme) => {
+  document.documentElement.style.setProperty("color-scheme", colorScheme);
+  console.log("color scheme set to", colorScheme);
+  select.value = colorScheme;
+  localStorage.setItem("colorScheme", colorScheme);
+};
+
+// Set initial color scheme based on localStorage or system preference
+const savedColorScheme = localStorage.getItem("colorScheme");
+const initialColorScheme = ["light dark", "light", "dark"].includes(
+  savedColorScheme
+)
+  ? savedColorScheme
+  : "light dark";
+setColorScheme(initialColorScheme);
+
+select.addEventListener('input', function (event) {
+  console.log('color scheme changed to', event.target.value);
+  localStorage.colorScheme = event.target.value
+  document.documentElement.style.setProperty('color-scheme', event.target.value);
+});
