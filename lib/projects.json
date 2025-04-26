@@ -1,16 +1,19 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "NBA Player Detection/Tracking",
+        "year": 2024,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa corporis dolores vel illo! At repellat atque, incidunt cumque unde, cum assumenda maiores, tempora facilis quasi deleniti neque consectetur doloremque. Fugiat."
+        "description": "Detects and tracks players, referees, basketballs, and movement statistics in a video using YOLO and OpenCV. Assigned players to teams based on jersey color using K-means for pixel segmentation and clustering."
     },
     {
-        "title": "Ad aliquam perspiciatis excepturi?",
+        "title": "Real Estate Data Visualization",
+        "year": 2024,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Illo similique beatae inventore molestiae nemo iusto praesentium nisi dolores a numquam vitae unde esse, aspernatur minima debitis dicta maxime quas fugit ad labore possimus! Rerum laborum accusamus dolor iste!"
+        "description": "Leveraged AWS Athena and housing data to write Spark SQL queries and create Matplotlib Visualizations. Utilized AWS S3 buckets for data and output, AWS Glue for Database and Table creation, and Athena for queries"
     },
     {
-        "title": "Nisi voluptatem corrupti aliquam.",
+        "title": "CPI Modeling",
+        "year": 2023,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Odio ipsum incidunt nihil vitae doloribus autem! Delectus sapiente vel praesentium at adipisci repellat, quaerat animi minus dignissimos, enim aliquid porro! Natus necessitatibus molestias laudantium voluptatem optio voluptate veniam magni."
     },
