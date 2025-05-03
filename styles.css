@@ -226,3 +226,62 @@ label.color-scheme select {
     padding: 0.2rem;
     border-radius: 4px;
 }
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.project-year {
+    color: var(--color-accent);
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 0.5em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    margin: 2em 0;
+}
+
+#projects-plot {
+    max-width: 20em;
+    overflow: visible;
+    flex-shrink: 0;
+}
+
+.legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    gap: 1em;
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+    border: 3px solid color-mix(in oklch, var(--color-accent), canvas 50%);
+    border-radius: 0.5em;
+    width: 100%;
+    min-height: fit-content;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.swatch {
+    display: inline-block;
+    width: 1em;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.2em;
+    background-color: var(--color);
+}
+
+.legend em {
+    font-style: normal;
+    opacity: 0.7;
+}

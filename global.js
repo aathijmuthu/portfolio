@@ -1,4 +1,4 @@
-console.log('IT’S ALIVE!');
+console.log('IT\'S ALIVE!');
 
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
@@ -110,12 +110,15 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
 	  article.innerHTML = `
 		<${headingLevel}>${proj.title}</${headingLevel}>
 		<img src="${proj.image}" alt="${proj.title}">
-		<p>${proj.description}</p>
+		<div class="project-content">
+			<p>${proj.description}</p>
+			<p class="project-year">${proj.year}</p>
+		</div>
 	  `;
 	  containerElement.appendChild(article);
 	});
-  }
+}
 
-  export async function fetchGitHubData(username) {
-    return fetchJSON(`https://api.github.com/users/${username}`);
-  }
+export async function fetchGitHubData(username) {
+  return fetchJSON(`https://api.github.com/users/${username}`);
+}
